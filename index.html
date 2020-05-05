@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://alvarotrigo.com/multiScroll/#second -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow: hidden; height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>multiscroll.js - split multi-scrolling pages plugin</title>
+	<meta name="author" content="Alvaro Trigo Lopez">
+	<meta name="description" content="multiscroll plugin by Alvaro Trigo. Create divided multi-scrolling pages with two splited vertical layouts or panels.">
+	<meta name="keywords" content="multiscroll,jquery,alvaro,trigo,plugin,divided,splitscreen,columns,screen,panels,layouts,vertical,split,splited">
+	<meta name="Resource-type" content="Document">
+
+
+	<link rel="stylesheet" type="text/css" href="./multiscroll.js - split multi-scrolling pages plugin_files/jquery.multiscroll.css">
+	<link rel="stylesheet" type="text/css" href="./multiscroll.js - split multi-scrolling pages plugin_files/demo.css">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script async="" src="./multiscroll.js - split multi-scrolling pages plugin_files/analytics.js"></script><script id="twitter-wjs" src="./multiscroll.js - split multi-scrolling pages plugin_files/widgets.js"></script><script src="./multiscroll.js - split multi-scrolling pages plugin_files/jquery.min.js"></script>
+	<script type="text/javascript" src="./multiscroll.js - split multi-scrolling pages plugin_files/jquery.easings.min.js"></script>
+
+
+	<script type="text/javascript" src="./multiscroll.js - split multi-scrolling pages plugin_files/jquery.multiscroll.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	    	$('#myContainer').multiscroll({
+	    		sectionsColor: ['#5ad0ff', '#000', '#e81639'],
+	        	anchors: ['first', 'second', 'third'],
+	        	menu: '#menu',
+	        	navigation: true,
+	        	navigationTooltips: ['First', 'Second', 'Third'],
+
+	        	afterLoad: function(anchor, index){
+	        		if(index==2 || index == 3){
+	        			$('#infoMenu li a').css('color', '#f2f2f2');
+	        		}
+					if(index==1){
+						$('#infoMenu li a').css('color', '#333');
+					}
+	        	}
+	  	 	});
+	    });
+    </script>
+
+<script charset="utf-8" src="./multiscroll.js - split multi-scrolling pages plugin_files/button.93a0c25c2d2f3081c705c98c2d9dec0e.js"></script></head>
+<body style="overflow: hidden; height: 100%;" class="ms-viewing-second">
+<a href="https://github.com/alvarotrigo/multiscroll.js"><img style="position: fixed;z-index:99; top: 0; right: 0; border: 0;" src="./multiscroll.js - split multi-scrolling pages plugin_files/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="./multiscroll.js - split multi-scrolling pages plugin_files/tweet_button.c63890edc4243ee77048d507b181eeec.en.html" data-url="http://alvarotrigo.com/multiScroll/"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<ul id="menu">
+	<li data-menuanchor="first" class="active"><a href="https://alvarotrigo.com/multiScroll/#first">First section</a></li>
+	<li data-menuanchor="second" class=""><a href="https://alvarotrigo.com/multiScroll/#second">Second section</a></li>
+	<li data-menuanchor="third"><a href="https://alvarotrigo.com/multiScroll/#third">Third section</a></li>
+</ul>
+
+<div id="myContainer">
+
+	<div class="ms-left" style="width: 50%; position: absolute; height: 100%; left: 0px; top: -788px; touch-action: none;">
+		<div class="ms-section section1 ms-table" data-anchor="first" style="height: 100%;"><div class="ms-tableCell" style="height: 788px">
+			<div class="graduated"></div>
+			<div class="fullscreen">
+				<h1>multiScroll.js</h1>
+				<h2>Create divided multi-scrolling pages.</h2>
+				<div id="download"><a href="https://github.com/alvarotrigo/multiscroll.js/archive/master.zip">Download</a></div>
+				<br>
+				<img src="./multiscroll.js - split multi-scrolling pages plugin_files/multiscroll.png" alt="multiscroll" height="257" width="265">
+				<p id="extensions-text">
+					<a href="https://alvarotrigo.com/multiScroll/extensions">multiScroll Extensions</a>
+				</p>
+			</div>
+		</div></div>
+
+		<div class="ms-section section2 ms-table active" data-anchor="second" style="height: 100%;"><div class="ms-tableCell" style="height: 788px">
+			<div class="content">
+				<h1>Powerful <br>jQuery plugin</h1>
+				<h2>Create split pages with two vertical scrolling panels. <br> Compatible with mobile phones and devices and old browsers such as IE 8.</h2>
+			</div>
+		</div></div>
+
+		<div class="ms-section section3 ms-table" data-anchor="third" style="height: 100%;"><div class="ms-tableCell" style="height: 788px">
+			<div class="content">
+				<h1>How to use it</h1>
+				<h2>Just use the following HTML markup:</h2>
+
+				<div id="markup">
+					<link rel="stylesheet" href="./multiscroll.js - split multi-scrolling pages plugin_files/gist-embed-31007ea0d3bd9f80540adfbc55afc7bd.css"><div id="gist11615366" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-gistfile1-html" class="file">
+
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html ">
+
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="">
+      <tbody><tr>
+        <td id="file-gistfile1-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-gistfile1-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">multiscroll</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-gistfile1-html-LC2" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-left</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-gistfile1-html-LC3" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-section</span>"<span class="pl-kos">&gt;</span>Section 1 left<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-gistfile1-html-LC4" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-section</span>"<span class="pl-kos">&gt;</span>Section 2 left<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-gistfile1-html-LC5" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-section</span>"<span class="pl-kos">&gt;</span>Section 3 left<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-gistfile1-html-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-gistfile1-html-LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-right</span>"<span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-gistfile1-html-LC8" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-section</span>"<span class="pl-kos">&gt;</span>Section 1 right<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-gistfile1-html-LC9" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-section</span>"<span class="pl-kos">&gt;</span>Section 2 right<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-gistfile1-html-LC10" class="blob-code blob-code-inner js-file-line">        <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">class</span>="<span class="pl-s">ms-section</span>"<span class="pl-kos">&gt;</span>Section 3 right<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-gistfile1-html-LC11" class="blob-code blob-code-inner js-file-line">    <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-gistfile1-html-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-gistfile1-html-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/alvarotrigo/3382b8ec69abb2f4e217/raw/e0922d84f7ff28a066f2f158f52fe1bad71c3df7/gistfile1.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/alvarotrigo/3382b8ec69abb2f4e217#file-gistfile1-html">gistfile1.html</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+				</div>
+
+			</div>
+		</div></div>
+	</div>
+
+	<div class="ms-right" style="width: 50%; position: absolute; height: 100%; right: 1px; top: -788px; touch-action: none;">
+		<div class="ms-section section1 ms-table" data-anchor="third" style="height: 100%;">
+			<div class="ms-tableCell" style="height: 788px">
+
+			</div>
+		</div>
+		<div class="ms-section section2 ms-table active" data-anchor="second" style="height: 100%;">
+			<div class="ms-tableCell" style="height: 788px"></div>
+		</div>
+		<div class="ms-section section3 ms-table" data-anchor="first" style="height: 100%;">
+			<div class="ms-tableCell" style="height: 788px"></div>
+			<div class="coffee"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="infoMenu">
+	<ul>
+		<li><a href="https://goo.gl/Xuix30" style="color: rgb(242, 242, 242);">Wordpress Theme</a></li>
+		<li><a href="https://alvarotrigo.com/multiScroll/extensions" style="color: rgb(242, 242, 242);">Extensions</a></li>
+		<li><a href="https://github.com/alvarotrigo/multiscroll.js/archive/master.zip" style="color: rgb(242, 242, 242);">Download</a></li>
+		<li><a href="https://github.com/alvarotrigo/multiscroll.js#multiscrolljs" style="color: rgb(242, 242, 242);">Documentation</a></li>
+		<li><a href="https://alvarotrigo.com/#contact" style="color: rgb(242, 242, 242);">Contact</a></li>
+		<li><a href="https://twitter.com/imac2" style="color: rgb(242, 242, 242);">Twitter</a></li>
+	</ul>
+
+</div>
+
+<!-- Google Analytics (Do not copy this!!) -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-94005074-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<div id="multiscroll-nav" class="right" style="color: rgb(0, 0, 0); margin-top: -33.5px;"><ul><li data-tooltip="First"><a href="https://alvarotrigo.com/multiScroll/#first" class=""><span></span></a></li><li data-tooltip="Second"><a href="https://alvarotrigo.com/multiScroll/#second" class="active"><span></span></a></li><li data-tooltip="Third"><a href="https://alvarotrigo.com/multiScroll/#third"><span></span></a></li></ul></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./multiscroll.js - split multi-scrolling pages plugin_files/widget_iframe.c63890edc4243ee77048d507b181eeec.html" title="Twitter settings iframe" style="display: none;"></iframe></body></html>
